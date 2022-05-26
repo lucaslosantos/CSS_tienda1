@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between ;
+    position:-webkit-sticky;
+    
+}
+
+header ul {
+    margin-block-start: 0em;
+    padding-inline-start: 0em;
+    list-style: none;
+
+}
+
+.menuu {
+    position: absolute;
+        left:  -1000px;
+        width: 40px;
+        top: 10px;
+        display: none;
+        
+    }
+
+
+
+
+.Buscador-izqu {
+font-size: 1.1rem;
+order:0;
+margin-top: 10px;
+font-family: 'Lato', sans-serif;
+
+
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 10px;
+    order: 1;
+    font-size-adjust:unset; 
+
+    
+    /* No se como ajustar el font-size*/
+
+}
+.centro h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.centro h1 {
+    font-family: 'Koulen', cursive;
+}
+.buscador {
+    order:2;
+    
+}
+    .buscador input{
+        width: 120px;
+        height: 15px;
+        
+    }
+
+.esquinas {
+    width: 150px;
+}
+
+img{
+
+    width: 250px;
+    margin-bottom: 20px;
+   
+}
+main{
+    z-index: -1;
+    position: relative;
+    bottom: 80px;
+    margin: auto;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+
+.azulclar {
+    color: rgb(27, 128, 128);
+}
+
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 300px;
+
+    
+}
+.formpreg {
+    margin-right: 50px;
+
+}
+
+footer ul {
+    margin-block-start: 0em;
+    padding-inline-start: 0em;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 640px){
+    .centro {
+       font-size: 9px; 
+       align-content: center;
+       flex-wrap: wrap;
+
+    }
+   
+    .Buscador-izqu {
+        font-size: 0.8em;
+    }
+
+    .buscador input{
+        width: 100px;
+        height: 12px;
+        
+    }
+
+    img{
+
+        width: 180px;
+        margin-bottom: 20px;  
+    }
+
+    .esquinas {
+        width: 120px;
+    }
+    footer {
+        font-size: 0.9em;
+    }
+
+    
+}
+    @media screen and (max-width: 527px){
+        .centro h2{
+            width: 150px;
+        } 
+        img{
+
+            width: 150px;
+            margin-bottom: 15px;  
+        }
+        .esquinas {
+            width: 80px;
+        }
+        .buscador input{
+            width: 60px;
+            height: 10px;
+            
+        }
+    }
+        @media screen and (max-width: 410px){
+            img{
+                width: 110px;
+                margin-bottom: 15px;  
+            }
+            .esquinas {
+                width: 60px;
+            }
+            .buscador input{
+                width: 50px;
+                height: 7px;
+                
+            }
+        }
+            @media screen and (max-width: 360px){
+                header {
+                    
+                    display: flex;
+                    justify-content: space-between ;
+                    position:-webkit-sticky;
+                
+                }
+                .centro {
+                    width: fit-content;
+                    height: fit-content;
+                }
+                .Buscador-izqu{
+                    position: relative;
+                    right: 100px;
+
+                }
+                .menuu {
+                    left: 0px;
+                    width: 40px;
+                    top: 10px;
+                    display: flex;
+                    justify-content: flex-start;
+                    position: absolute;
+                }
+            }
